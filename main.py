@@ -84,7 +84,7 @@ print(msg)
 # print(course.lower())  # return a new string in lower case.
 # print(course.find('beginners'))  # the find() returns the index of a string.
 # print('for' in course)  # the "in" method or keyword returns a true or false if a value can be found in a string
-# print(course.replace('Python', 'JavaScript'))  # The replace() is used to replace or change a string. And it is case-sensitive
+# print(course.replace('Python', 'JavaScript'))  # The replace() is used to replace or change a string.And it is case-sensitive
 
 # A print(paragraph.title())  # the title() string a lower case typed string into an upper case string for every first letter
 
