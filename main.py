@@ -1,6 +1,6 @@
 import math
 from random import randint
-import re
+# import re
 
 # print('I am Eoin Carrick')
 # print('o----')
@@ -84,10 +84,9 @@ print(msg)
 # print(course.lower())  # return a new string in lower case.
 # print(course.find('beginners'))  # the find() returns the index of a string.
 # print('for' in course)  # the "in" method or keyword returns a true or false if a value can be found in a string
-# print(course.replace('Python', 'JavaScript'))  # The replace() is used to replace or change a string. And it is case
-# sensitive
+# print(course.replace('Python', 'JavaScript'))  # The replace() is used to replace or change a string. And it is case-sensitive
 
-# print(paragraph.title())  # the title() string a lower case typed string into a upper case string for every first letter
+# A print(paragraph.title())  # the title() string a lower case typed string into an upper case string for every first letter
 
 
 # Arithmetic Operations
@@ -193,21 +192,43 @@ while i <= 10:
     i += 1
 
 #  Guessing Game
-guess_count = 0
-guess_limit = 3
-rand = randint(1, 10)
-secret_number =  rand
-print(secret_number)
-while guess_count < guess_limit:
-    int(input('Guess: '))
-    guess_count += 1
-    if secret_number == rand:
-        print('You Guessed Right')
+#  guess_count = 0
+#  guess_limit = 3
+#  rand = randint(1, 10)
+#  secret_number =  rand
+#  print(secret_number)
+#  while guess_count < guess_limit:
+#      int(input('Guess: '))
+#      guess_count += 1
+#      if secret_number == rand:
+#          print('You Guessed Right')
+#          break
+#  else:
+#      print('Sorry, you only guess three times.')
+
+
+
+users_choices = input('''
+start - to start the car 
+stop - to stop the car 
+quit - to exit 
+''')
+
+print(users_choices)
+
+is_to_start_car = 'start'
+is_to_stop_car = 'stop'
+is_to_quit_car = 'quit'
+
+while users_choices:
+    if users_choices.upper() == is_to_start_car:
+        print('The car is ready to go!')
+        break
+    elif users_choices.upper() == is_to_stop_car:
+        print('The car has stopped!')
+        break
+    elif users_choices.upper() == is_to_quit_car:
+        print('Quiting...')
         break
 else:
-    print('Sorry, you only guess three times.')
-
-
-input('Start - to start the car')
-input('stop - to stop the car')
-input('quit - to exit')
+    print('It is not working')
