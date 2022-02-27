@@ -193,19 +193,19 @@ while i <= 10:
     i += 1
 
 #  Guessing Game
-# guess_count = 0
-# guess_limit = 3
-# rand = randint(1, 10)
-# secret_number =  rand
-# print(secret_number)
-# while guess_count < guess_limit:
-#     int(input('Guess: '))
-#     guess_count += 1
-#     if secret_number == rand:
-#         print('You Guessed Right')
-#         break
-# else:
-#     print('Sorry, you only guess three times.')
+guess_count = 0
+guess_limit = 3
+rand = randint(1, 10)
+secret_number =  rand
+print(secret_number)
+while guess_count < guess_limit:
+    int(input('Guess: '))
+    guess_count += 1
+    if secret_number == rand:
+        print('You Guessed Right')
+        break
+else:
+    print('Sorry, you only guess three times.')
 
 
 input('Start - to start the car')
