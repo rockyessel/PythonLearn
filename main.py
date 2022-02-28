@@ -250,23 +250,23 @@ while i <= 10:
 #       else:
 #           print('Quiting')
 
-limit = 2
+limit = 3
 starting_number = 0
 
 
-while starting_number <= limit:
-    users_input = input('')
-    starting_number += 1
-    if users_input.upper() == 'HELP':
+while True:
+    users_input = input('> ').upper()
+    if users_input == 'HELP':
        print('''
        start - to start the car
        stop - to stop the car
        quit - to exit the terminal''')
-       users_choices = input('')
-       if users_choices.upper() == 'START':
+    elif users_input == 'START':
            print('The car is ready to go!')
-       elif users_choices.upper() == 'STOP':
+    elif users_input == 'STOP':
            print('The car has stopped!')
-else:
-    print('Quiting')
+    elif users_input == 'QUIT':
+           break
+    else:
+        print('Sorry! Unable to recognize keyword')
 
