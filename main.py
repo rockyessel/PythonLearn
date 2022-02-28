@@ -171,7 +171,7 @@ else:
 
 # weight = input('Weight: ')
 # unit = input('(L)bs or (K)g: ')
-#
+
 # if unit.upper() == "L":
 #     convert = int(weight) / 2.205
 #     round_up = round(convert)
@@ -208,27 +208,65 @@ while i <= 10:
 
 
 
-users_choices = input('''
-start - to start the car 
-stop - to stop the car 
-quit - to exit 
-''')
+#  users_choices = input('''
+#  start - to start the car
+#  stop - to stop the car
+#  quit - to exit
+#  ''')
+#
+#  print(users_choices)
+#
+#  is_to_start_car = 'start'
+#  is_to_stop_car = 'stop'
+#  is_to_quit_car = 'quit'
+#
+#  while users_choices:
+#      if users_choices.upper() == is_to_start_car:
+#          print('The car is ready to go!')
+#          break
+#      elif users_choices.upper() == is_to_stop_car:
+#          print('The car has stopped!')
+#          break
+#      elif users_choices.upper() == is_to_quit_car:
+#          print('Quiting...')
+#          break
+#  else:
+#      print('It is not working')
 
-print(users_choices)
 
-is_to_start_car = 'start'
-is_to_stop_car = 'stop'
-is_to_quit_car = 'quit'
 
-while users_choices:
-    if users_choices.upper() == is_to_start_car:
-        print('The car is ready to go!')
-        break
-    elif users_choices.upper() == is_to_stop_car:
-        print('The car has stopped!')
-        break
-    elif users_choices.upper() == is_to_quit_car:
-        print('Quiting...')
-        break
+# print(users_input)
+#
+# if users_input.upper() == 'HELP':
+#       print('''start - to start the car
+#       stop - to stop the car
+#       quit - to exit ''')
+#       users_selection = input('')
+#
+#       if users_selection.upper() == 'START':
+#           print('The car is ready to go!')
+#       elif users_selection.upper() == 'STOP':
+#           print('The car has stopped!')
+#       else:
+#           print('Quiting')
+
+limit = 2
+starting_number = 0
+
+
+while starting_number <= limit:
+    users_input = input('')
+    starting_number += 1
+    if users_input.upper() == 'HELP':
+       print('''
+       start - to start the car
+       stop - to stop the car
+       quit - to exit the terminal''')
+       users_choices = input('')
+       if users_choices.upper() == 'START':
+           print('The car is ready to go!')
+       elif users_choices.upper() == 'STOP':
+           print('The car has stopped!')
 else:
-    print('It is not working')
+    print('Quiting')
+
