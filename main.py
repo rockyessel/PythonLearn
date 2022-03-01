@@ -357,3 +357,54 @@ print(f'The largest number here is: {max}')
 
 
 # 2D Lists
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+matrix[0][1] = 'Y'
+
+print(matrix)
+
+for row in matrix:
+    for items in row:
+        print(items)
+
+# List Method or Function
+number_list = [2, 4, 2, 76, 43, 4]
+number_list.append(20) # append()
+print(number_list)
+
+#The append() method or function add a element at the end of a list
+
+number_list.insert(1, 200)
+print(number_list)
+
+# The insert() method or function add an element at the start or middle or the end of a list
+# since it takes two argument insert(index, object). So, therefore you can add any number you want
+# at any place using the insert() method or function
+
+number_list.remove(200)
+print(number_list)
+
+# The remove() method or function is used to remove a int or string from a list, and it takes in only one
+# argument.
+
+number_list.pop()
+print(number_list)
+
+# The pop() method or function removes an element or item at the ending of a list or the last value on a list.
+
+checking_for_index = number_list.index(34)
+print(checking_for_index)
+
+# The index() method or function is used in order to check the index, or position of a value or items in a list.
+# To check if a particular value exist in a list.
+# If the value is not found, it throws an error.
+
+number_list.clear()
+print(number_list)
+
+# The clear() method or function is used, when you want to clear a list of items. And it doesn't take any
+# parameters.
