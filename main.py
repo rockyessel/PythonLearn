@@ -424,3 +424,18 @@ print(number_list)
 # parameters.
 
 alphabet_letters = ['q', 'e', 'd', 's', 'f', 'r', 'g', 'v', 'b', 'n', 'm', 'h', 'k', 'l', 'p', 'o', 'i', 'u', 'h', 'y', 'g', 't', 'v', 'b', 'n', 'm', 'j', 'h', 'g', 'f', 'd', 's', 'a', 'z', 'x', 'c', 'v', 'b', 'd', 's', 'e', 'r', 't', 'y', 'u', 'h', 'v', 'c', 'd', 'z', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'i', 'u', 'y', 't', 'r', 'e']
+unique = []
+
+for every_letter in alphabet_letters:
+    if every_letter not in unique:
+        unique.append(every_letter)
+print(unique)
+
+
+num_list = [1, 12, 3, 43, 51, 52, 3, 3]
+maxs = num_list[0]
+
+for x in num_list:
+    if x > maxs:
+        maxs = x
+print(maxs)
