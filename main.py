@@ -54,8 +54,7 @@ from random import randint
 # ////  Strings  ////
 
 course = "Python's course for 'beginners'"
-paragraph = '''hi
-my name is Eoin Carrick'''
+paragraph = '''hi my name is Eoin Carrick'''
 
 # we can access a single letter from a string using "[]"
 # to access the first letter, we code "[1]"
@@ -256,32 +255,39 @@ start_already = False
 stopped_already = False
 
 
-while True:
-    users_input = input('> ').upper()
-    if users_input == 'HELP':
-       print('''
-start - to start the car
-stop - to stop the car
-quit - to exit the terminal''')
-    elif users_input == 'START':
-           if start_already:
-               print('The car has already started!')
-           else:
-               start_already = True
-               print('The car is ready to go!')
-
-    elif users_input == 'STOP':
-        if stopped_already:
-            print('The car has already stopped!')
-        else:
-            stopped_already = True
-            print('The car has stopped!')
-    elif users_input == 'QUIT':
-           break
-    else:
-        print('Sorry! Unable to recognize keyword. Please check your spellings')
-        break
+#  while True:
+#      users_input = input('> ').upper()
+#      if users_input == 'HELP':
+#         print('''
+#  start - to start the car
+#  stop - to stop the car
+#  quit - to exit the terminal''')
+#      elif users_input == 'START':
+#             if start_already:
+#                 print('The car has already started!')
+#             else:
+#                 start_already = True
+#                 print('The car is ready to go!')
+#
+#      elif users_input == 'STOP':
+#          if stopped_already:
+#              print('The car has already stopped!')
+#          else:
+#              stopped_already = True
+#              print('The car has stopped!')
+#      elif users_input == 'QUIT':
+#             break
+#      else:
+#        print('Sorry! Unable to recognize keyword. Please check your spellings')
+#        break
         # 1:41:24
+
+#  number_at_zero = 0
+#
+#  while number_at_zero < 10:
+#      number_at_zero += 1
+#      print(number_at_zero)
+#
 
 # For Loops
 for every_letter in 'Eoin Carrick':
@@ -294,6 +300,57 @@ for every_item in ['Eoin', 'Carrick', 'John', 'Bismark']:
 #   range python built-in function for providing number from 0 to the required ranged.
 #   range(10), will provide number between 0 and 10.
 
-for numbers in range(100):
-    print(numbers
-          )
+for numbers in range(10):
+    print(numbers)
+
+for number_intervals in range(5, 9):
+    print(number_intervals)
+
+prices = [10, 20, 30]
+total = 0
+for add_price in prices:
+    total += add_price
+    print(f'Total: {total}')
+
+# Nested Loop
+for x in range(4):
+    for y in range(3):
+        print(f'({x}, {y})')
+
+f_number = [5, 2, 5, 2, 2]
+x = 'x'
+for f in f_number:
+    for ff in x:
+        print(ff * f)
+
+# Lists
+first_name_only = ['John Doe', 'Eoin Carrick', 'Mattew Carrick', 'kiki Sarpong', 'Mz Akua', 'Uncle Sarpong', 'Emefa YoYo', 'Jeff Driver', 'Sam Arranger']
+taken_names = first_name_only[:]
+taken_names[0] = 'Essel'
+
+
+
+
+
+# for largest in first_name_only:
+#     larger = len(largest)
+#     if True:
+#         print(largest)
+#         print(max(larger))
+#     else:
+#         print('no de')
+
+
+random_numbers = [1, 4, 8, 10, 34, 65, 34, 89, 23, 23, 12, 32, 43, 12, 32, 43, 12]
+max = random_numbers[0]
+
+for number in random_numbers:
+    if number > max:
+        max = number
+        print(max)
+print(f'The largest number here is: {max}')
+
+# for each_num in random_numbers:
+#     max_number = len(max(random_numbers))
+#     if len(each_num) == max_number:
+#         print(each_num)
