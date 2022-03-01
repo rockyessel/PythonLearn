@@ -1,5 +1,6 @@
 import math
 from random import randint
+
 # import re
 
 # print('I am Eoin Carrick')
@@ -77,15 +78,15 @@ last = 'Carrick'
 msg = f'{first} [{last}] is a coder'
 print(msg)
 
-# /// Strings Method. ///
-# print(len(paragraph))  # the len() is used to check the total number of letters a string has, or array.
-# print(paragraph.upper())  # return a new string in upper case.
-# print(course.lower())  # return a new string in lower case.
-# print(course.find('beginners'))  # the find() returns the index of a string.
-# print('for' in course)  # the "in" method or keyword returns a true or false if a value can be found in a string
-# print(course.replace('Python', 'JavaScript'))  # The replace() is used to replace or change a string.And it is case-sensitive
+# /// Strings Method. /// print(len(paragraph))  # the len() is used to check the total number of letters a string
+# has, or array. print(paragraph.upper())  # return a new string in upper case. print(course.lower())  # return a new
+# string in lower case. print(course.find('beginners'))  # the find() returns the index of a string. print('for' in
+# course)  # the "in" method or keyword returns a true or false if a value can be found in a string print(
+# course.replace('Python', 'JavaScript'))  # The replace() is used to replace or change a string.And it is
+# case-sensitive
 
-# A print(paragraph.title())  # the title() string a lower case typed string into an upper case string for every first letter
+# A print(paragraph.title())  # the title() string a lower case typed string into an upper case string for every
+# first letter
 
 
 # Arithmetic Operations
@@ -182,8 +183,6 @@ else:
 # else:
 #     print('sorry! Something went wrong. Check again')
 
-
-
 #  While loop
 i = 1
 while i <= 10:
@@ -204,7 +203,6 @@ while i <= 10:
 #          break
 #  else:
 #      print('Sorry, you only guess three times.')
-
 
 
 #  users_choices = input('''
@@ -232,8 +230,6 @@ while i <= 10:
 #  else:
 #      print('It is not working')
 
-
-
 # print(users_input)
 #
 # if users_input.upper() == 'HELP':
@@ -253,7 +249,6 @@ limit = 3
 starting_number = 0
 start_already = False
 stopped_already = False
-
 
 #  while True:
 #      users_input = input('> ').upper()
@@ -280,7 +275,7 @@ stopped_already = False
 #      else:
 #        print('Sorry! Unable to recognize keyword. Please check your spellings')
 #        break
-        # 1:41:24
+# 1:41:24
 
 #  number_at_zero = 0
 #
@@ -292,12 +287,12 @@ stopped_already = False
 # For Loops
 for every_letter in 'Eoin Carrick':
     print(every_letter)
-for every_number in [1,2,3,4,5,6,7,8,9]:
+for every_number in [1, 2, 3, 4, 5, 6, 7, 8, 9]:
     print(every_number)
 for every_item in ['Eoin', 'Carrick', 'John', 'Bismark']:
     print(every_item)
 
-#   range python built-in function for providing number from 0 to the required ranged.
+#   range python built-in function for providing number from 0 to the required to be ranged.
 #   range(10), will provide number between 0 and 10.
 
 for numbers in range(10):
@@ -324,13 +319,10 @@ for f in f_number:
         print(ff * f)
 
 # Lists
-first_name_only = ['John Doe', 'Eoin Carrick', 'Mattew Carrick', 'kiki Sarpong', 'Mz Akua', 'Uncle Sarpong', 'Emefa YoYo', 'Jeff Driver', 'Sam Arranger']
+first_name_only = ['John Doe', 'Eoin Carrick', 'Matte Carrick', 'kiki Sarong', 'Mz Aka', 'Uncle Sarong',
+                   'Emera YoYo', 'Jeff Driver', 'Sam Arranger']
 taken_names = first_name_only[:]
-taken_names[0] = 'Essel'
-
-
-
-
+taken_names[0] = 'Easel'
 
 # for largest in first_name_only:
 #     larger = len(largest)
@@ -342,13 +334,13 @@ taken_names[0] = 'Essel'
 
 
 random_numbers = [1, 4, 8, 10, 34, 65, 34, 89, 23, 23, 12, 32, 43, 12, 32, 43, 12]
-max = random_numbers[0]
+max_num = random_numbers[0]
 
 for number in random_numbers:
-    if number > max:
-        max = number
-        print(max)
-print(f'The largest number here is: {max}')
+    if number > max_num:
+        max_num = number
+        print(max_num)
+print(f'The largest number here is: {max_num}')
 
 # for each_num in random_numbers:
 #     max_number = len(max(random_numbers))
@@ -363,7 +355,7 @@ matrix = [
     [7, 8, 9]
 ]
 
-matrix[0][1] = 'Y'
+matrix[0] = 'Y'
 
 print(matrix)
 
@@ -372,10 +364,9 @@ for row in matrix:
         print(items)
 
 # List Method or Function
-number_list = [2, 4, 2, 76, 43, 4]
-number_list.append(20) # append()
+number_list = [2, 4, 2, 76, 43, 4, 20]
 print(number_list)
-#The append() method or function add a element at the end of a list
+# To append() method or function add an element at the end of a list
 
 number_list.insert(1, 200)
 print(number_list)
@@ -385,7 +376,7 @@ print(number_list)
 
 number_list.remove(200)
 print(number_list)
-# The remove() method or function is used to remove a int or string from a list, and it takes in only one
+# The remove() method or function is used to remove an int or string from a list, and it takes in only one
 # argument.
 
 number_list.pop()
@@ -423,7 +414,10 @@ print(number_list)
 # The clear() method or function is used, when you want to clear a list of items. And it doesn't take any
 # parameters.
 
-alphabet_letters = ['q', 'e', 'd', 's', 'f', 'r', 'g', 'v', 'b', 'n', 'm', 'h', 'k', 'l', 'p', 'o', 'i', 'u', 'h', 'y', 'g', 't', 'v', 'b', 'n', 'm', 'j', 'h', 'g', 'f', 'd', 's', 'a', 'z', 'x', 'c', 'v', 'b', 'd', 's', 'e', 'r', 't', 'y', 'u', 'h', 'v', 'c', 'd', 'z', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'i', 'u', 'y', 't', 'r', 'e']
+alphabet_letters = ['q', 'e', 'd', 's', 'f', 'r', 'g', 'v', 'b', 'n', 'm', 'h', 'k', 'l', 'p', 'o', 'i', 'u', 'h', 'y',
+                    'g', 't', 'v', 'b', 'n', 'm', 'j', 'h', 'g', 'f', 'd', 's', 'a', 'z', 'x', 'c', 'v', 'b', 'd', 's',
+                    'e', 'r', 't', 'y', 'u', 'h', 'v', 'c', 'd', 'z', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'i', 'u',
+                    'y', 't', 'r', 'e']
 unique = []
 
 for every_letter in alphabet_letters:
@@ -431,11 +425,10 @@ for every_letter in alphabet_letters:
         unique.append(every_letter)
 print(unique)
 
-
 num_list = [1, 12, 3, 43, 51, 52, 3, 3]
-maxs = num_list[0]
+the_max_num = num_list[0]
 
 for x in num_list:
-    if x > maxs:
-        maxs = x
-print(maxs)
+    if x > the_max_num:
+        the_max_num = x
+print(the_max_num)
