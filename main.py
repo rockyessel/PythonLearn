@@ -252,21 +252,48 @@ while i <= 10:
 
 limit = 3
 starting_number = 0
+start_already = False
+stopped_already = False
 
 
 while True:
     users_input = input('> ').upper()
     if users_input == 'HELP':
        print('''
-       start - to start the car
-       stop - to stop the car
-       quit - to exit the terminal''')
+start - to start the car
+stop - to stop the car
+quit - to exit the terminal''')
     elif users_input == 'START':
-           print('The car is ready to go!')
+           if start_already:
+               print('The car has already started!')
+           else:
+               start_already = True
+               print('The car is ready to go!')
+
     elif users_input == 'STOP':
-           print('The car has stopped!')
+        if stopped_already:
+            print('The car has already stopped!')
+        else:
+            stopped_already = True
+            print('The car has stopped!')
     elif users_input == 'QUIT':
            break
     else:
-        print('Sorry! Unable to recognize keyword')
+        print('Sorry! Unable to recognize keyword. Please check your spellings')
+        break
+        # 1:41:24
 
+# For Loops
+for every_letter in 'Eoin Carrick':
+    print(every_letter)
+for every_number in [1,2,3,4,5,6,7,8,9]:
+    print(every_number)
+for every_item in ['Eoin', 'Carrick', 'John', 'Bismark']:
+    print(every_item)
+
+#   range python built-in function for providing number from 0 to the required ranged.
+#   range(10), will provide number between 0 and 10.
+
+for numbers in range(100):
+    print(numbers
+          )
