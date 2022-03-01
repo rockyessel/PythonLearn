@@ -401,16 +401,26 @@ print(checking_for_index)
 # print('for' in course)  # the "in" method or keyword returns a true or false if a value can be found in a string or
 # int
 
-
 checking_for_frequency = number_list.count(2)
 print(checking_for_frequency)
 # The count() method or function, counts the number of times, value or string or int appeared in a list.
 
 number_list.sort()
 print(number_list)
-# The sort() method or function, re-arrange a value from lower to upper
+# The sort() method or function, re-arrange a value from lower to upper (Ascending)
+
+number_list.reverse()
+print(number_list)
+# The reverse() method or function, re-arrange a value from upper to  lower (Descending)
+
+number_list_copy = number_list.copy()
+print(number_list_copy)
+# The copy() method or function is used, when you want to copy a list. And it doesn't take any
+# parameters.
 
 number_list.clear()
 print(number_list)
 # The clear() method or function is used, when you want to clear a list of items. And it doesn't take any
 # parameters.
+
+alphabet_letters = ['q', 'e', 'd', 's', 'f', 'r', 'g', 'v', 'b', 'n', 'm', 'h', 'k', 'l', 'p', 'o', 'i', 'u', 'h', 'y', 'g', 't', 'v', 'b', 'n', 'm', 'j', 'h', 'g', 'f', 'd', 's', 'a', 'z', 'x', 'c', 'v', 'b', 'd', 's', 'e', 'r', 't', 'y', 'u', 'h', 'v', 'c', 'd', 'z', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'i', 'u', 'y', 't', 'r', 'e']
