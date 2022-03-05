@@ -419,7 +419,7 @@ alphabet_letters = ['q', 'e', 'd', 's', 'f', 'r', 'g', 'v', 'b', 'n', 'm', 'h', 
                     'e', 'r', 't', 'y', 'u', 'h', 'v', 'c', 'd', 'z', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'i', 'u',
                     'y', 't', 'r', 'e']
 unique = []
-
+# Thi is the way to remove duplicates
 for every_letter in alphabet_letters:
     if every_letter not in unique:
         unique.append(every_letter)
