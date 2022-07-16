@@ -1,6 +1,6 @@
 # My Jounary to learning Python
 
-import math
+``import math
 from random import randint
 
 # import re
@@ -435,4 +435,4 @@ for x in num_list:
         the_max_num = x
 print(the_max_num)
 `
-`
+```
