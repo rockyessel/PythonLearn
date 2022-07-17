@@ -532,4 +532,9 @@ print(customers)
 
 
 # Function in Python
+# "def name () :"
+# "def" is used to, when you're or want to use a function
+# """"def func() :
+#     print('function')""""
+# where "func" is the "name" of the function, which can be anything at all.
 
