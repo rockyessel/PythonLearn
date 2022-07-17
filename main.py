@@ -1,4 +1,4 @@
-import math
+cimport math
 from random import randint
 
 # import re
