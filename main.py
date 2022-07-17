@@ -1,3 +1,4 @@
+from argparse import ONE_OR_MORE
 from datetime import date
 import math
 from random import randint
@@ -486,7 +487,7 @@ print(customers)
 
 # numbers_in_words = ('zero','one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine')
 #                  #    0      1      2       3        4      5       6       7       8         9
-    
+
 # # for every_word in numbers_in_words: 
 # #  num = numbers_in_words.index(every_word)
 # #  for i in user__input:
@@ -528,6 +529,28 @@ print(customers)
 # split_letter = 'a b c d e f g h i j k l m n o p q r s t u v w x y z'
 # l = split_letter.split(' ')
 # print(l)
+
+users_input_pair_values = input('Input a pair number e.g: 12,23,45 > ')
+
+
+one_to_hundred= '''Zero One Two Three Four Five Six Seven Eight Nine Ten Eleven Twelve Thirteen Fourteen Fifteen Sixteen Seventeen Eighteen Nineteen Twenty Twenty-one Twenty-two Twenty-three Twenty-four Twenty-five Twenty-six Twenty-seven Twenty-eight Twenty-nine Thirty Thirty-one Thirty-two Thirty-three Thirty-four Thirty-five Thirty-six Thirty-seven Thirty-eight Thirty-nine Forty Forty-one Forty-two Forty-three Forty-four Forty-five Forty-six Forty-seven Forty-eight Forty-nine Fifty Fifty-one Fifty-two Fifty-three Fifty-four Fifty-five Fifty-six Fifty-seven Fifty-eight Fifty-nine Sixty Sixty-one Sixty-two Sixty-three Sixty-four Sixty-five Sixty-six Sixty-seven Sixty-eight Sixty-nine Seventy Seventy-one Seventy-two Seventy-three Seventy-four Seventy-five Seventy-six Seventy-seven Seventy-eight Seventy-nine Eighty Eighty-one Eighty-two Eighty-three Eighty-four Eighty-five Eighty-six Eighty-seven Eighty-eight Eighty-nine Ninety Ninety-one Ninety-two Ninety-three Ninety-four Ninety-five Ninety-six Ninety-seven Ninety-eight Ninety-nine One-hundred'''
+one_to_hundred_arr = one_to_hundred.split(' ')
+print(one_to_hundred_arr)
+print(len(one_to_hundred_arr))
+
+input_arr = users_input_pair_values.split(',')
+print(input_arr)
+
+for every_pair_num in input_arr:
+    for word in one_to_hundred_arr:
+        num = one_to_hundred_arr.index(word)
+        if int(every_pair_num) == int(num):
+           number_result = one_to_hundred_arr[num]
+           print(number_result)
+
+
+
+
 
 
 
