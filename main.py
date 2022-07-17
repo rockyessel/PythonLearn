@@ -1,4 +1,4 @@
-cimport math
+import math
 from random import randint
 
 # import re
@@ -67,20 +67,23 @@ paragraph = '''hi my name is Eoin Carrick'''
 # And if we want to access a RANGE of single letters, we use ":" inside the "[]"
 # which will look like this "[0:9]". this will return letters from the zero(0) index to the 9th index,
 # but will not return the 9th index letter.
-# and to return all the letters, we can code "[0:]"
+# and to return all the letters, we can do this with "[0:]"
 # print(course[0:9])  # So here, we got "Python's."
 # print(paragraph[0:])
 
 # # /// Formatted String. ///
 first = 'Eoin'
 last = 'Carrick'
-
+othersFinds = course.find('for')
 msg = f'{first} [{last}] is a coder'
 print(msg)
+print(f'our findings: {othersFinds}')
 
-# /// Strings Method. /// print(len(paragraph))  # the len() is used to check the total number of letters a string
-# has, or array. print(paragraph.upper())  # return a new string in upper case. print(course.lower())  # return a new
-# string in lower case. print(course.find('beginners'))  # the find() returns the index of a string. print('for' in
+# /// Strings Method. /// print(len(paragraph))  # the len() is used to check the total number of elements or items a string
+# has, or array. 
+# print(paragraph.upper())  # return a new string in upper case. 
+# print(course.lower())  # return a new string in lower case.
+# print(course.find('beginners'))  # the find() returns the index of a string. print('for' in
 # course)  # the "in" method or keyword returns a true or false if a value can be found in a string print(
 # course.replace('Python', 'JavaScript'))  # The replace() is used to replace or change a string.And it is
 # case-sensitive
@@ -170,10 +173,10 @@ else:
     print('Name looks good 👍')
 
 # weight = input('Weight: ')
-# unit = input('(L)bs or (K)g: ')
+# unit = input('(L)lbs or (K)g: ')
 
 # if unit.upper() == "L":
-#     convert = int(weight) / 2.205
+#     convert = (int(weight) / 2.205)
 #     round_up = round(convert)
 #     print(f'Your are {round_up} pounds')
 # elif unit.upper() == "K":
@@ -312,7 +315,7 @@ for x in range(4):
     for y in range(3):
         print(f'({x}, {y})')
 
-f_number = [5, 2, 5, 2, 2]
+f_number = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
 x = 'x'
 for f in f_number:
     for ff in x:
@@ -335,6 +338,7 @@ taken_names[0] = 'Easel'
 
 random_numbers = [1, 4, 8, 10, 34, 65, 34, 89, 23, 23, 12, 32, 43, 12, 32, 43, 12]
 max_num = random_numbers[0]
+print(f'max_num: {max_num}')
 
 for number in random_numbers:
     if number > max_num:
@@ -364,9 +368,9 @@ for row in matrix:
         print(items)
 
 # List Method or Function
-number_list = [2, 4, 2, 76, 43, 4, 20]
+number_list = [2, 4, 2,1,46,2,12,3,76,56,19,7,8,0,32,43,54,65,76,87,98,99,199,12,13,115, 76, 43, 4, 20]
 print(number_list)
-# To append() method or function add an element at the end of a list
+# The append() method or function add an element at the end of a list
 
 number_list.insert(1, 200)
 print(number_list)
@@ -383,8 +387,11 @@ number_list.pop()
 print(number_list)
 # The pop() method or function removes an element or item at the ending of a list or the last value on a list.
 
-checking_for_index = number_list.index(4)
-print(checking_for_index)
+checking_for_index = number_list.index(19, 3, 12)
+print(f'checking_for_index: {checking_for_index}')
+# It takes 3 parameters, the first parameter is the value of the list we are checking
+# the second parameter is the "start" index, there, we tell it where to start looking for the value
+# and the third parameter is the "end" index. This tell it where to end the search fot the value.
 # The index() method or function is used in order to check the index, or position of a value or items in a list.
 # To check if a particular value exist in a list.
 # If the value is not found, it throws an error.
@@ -393,7 +400,7 @@ print(checking_for_index)
 # int
 
 checking_for_frequency = number_list.count(2)
-print(checking_for_frequency)
+print(f'checking_for_frequency: {checking_for_frequency}')
 # The count() method or function, counts the number of times, value or string or int appeared in a list.
 
 number_list.sort()
@@ -432,3 +439,21 @@ for x in num_list:
     if x > the_max_num:
         the_max_num = x
 print(the_max_num)
+
+
+# Tuple
+tuple_list = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19)
+print(tuple_list[3])
+
+# Tuple are not re-assignable/mutable/changeable once they have been already assigned.
+# eg: my_list = (1,2,3,4,5,5,6,7)
+# Doing this " my_list[2] = 100" will return an error message
+# Note that, it is almost the same as "my_list = [1,2,3,4,5,6,7]", but this one here, is mutable.
+# And we use tuple when we know or dont want a list to be mutable in your code in the future.
+
+
+# Unpacking
+co_ordinate = (1,2,3)
+x,y,z = co_ordinate
+
+# Dictionaries
