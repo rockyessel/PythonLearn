@@ -1,4 +1,5 @@
-from argparse import ONE_OR_MORE
+
+
 from datetime import date
 import math
 from random import randint
@@ -563,3 +564,73 @@ for every_pair_num in input_arr:
 #     print('function')""""
 # where "func" is the "name" of the function, which can be anything at all.
 
+def greet_user():
+  print('Hi there')
+  print('Hello')
+
+greet_user()
+
+# Function - Parameters
+def get_users(name):
+    print(f'Hello there, have you seen {name}')
+get_users('Eoin')
+get_users('Carrick')
+
+# Difference between "parameters" and "arguments"
+# "Parameters" are the holes or placeholders we define in our function when we want to receive information.
+# "Arguments" are the actual pieces of information we supply to the functions.
+# Examples
+
+#       "Parameters" is more like a placeholder
+#             ▼
+# def people(name):
+#       print(name)
+
+#       "Arguments" is the value for the placeholder
+#            ▼
+#  people('john')
+
+# Keyword Arguments
+# Note Positional Argument, means that orders matters, but in Keyword Arguments, the order is very much less important, since we assign the parameter to the arguments when we call the out the function.
+
+day_mode_in_number = 4 # from 0:00 to 23:00
+set_time = 4
+
+def greet_the_user(state, time):
+    if state >= 0 <= 12:
+        print("Good morning")
+    elif state > 12 <= 15:
+        print('Good Afternoon')
+    else:
+        print('Good Evening')
+    
+    if time == state:
+        print('Time to wake up, and play the alarm')
+    else:
+        print("Don't play the alarm")
+
+#          Keyword Arguments          Keyword Arguments
+#               ▼                           ▼
+greet_the_user(time = day_mode_in_number, state = set_time)
+greet_the_user(day_mode_in_number, state = set_time) # This is also possible.
+
+# it checks for an input that has a letter vowel inside of it.
+user_name =  input('Type your name here ')
+vowel = ['a', 'e', 'i', 'o', 'u','y']
+def user_checking_name(user_name):
+     for every_letter in user_name:
+        for every_vowel_letter in vowel:
+          if every_letter == every_vowel_letter:
+            print(f'There is an {every_vowel_letter} in your name ,{user_name}')
+        #   else:
+        #     print(f'There is no vowel letter in your name: {user_name}')
+
+user_checking_name(user_name)
+user_checking_name('john')
+user_checking_name('sarpong')
+user_checking_name('sarpslogistics')
+
+
+def get_arg(arg_name, arg_number):
+    print(f'The argument name is {arg_name}, and the number is {arg_number} ')
+get_arg(arg_number = 10, arg_name ='value')
