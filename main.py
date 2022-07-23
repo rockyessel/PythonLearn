@@ -612,7 +612,7 @@ def greet_the_user(state, time):
 #          Keyword Arguments          Keyword Arguments
 #               ▼                           ▼
 greet_the_user(time = day_mode_in_number, state = set_time)
-greet_the_user(day_mode_in_number, state = set_time) # This is also possible.
+# greet_the_user(day_mode_in_number, state = set_time) # This is also possible.
 
 # it checks for an input that has a letter vowel inside of it.
 user_name =  input('Type your name here ')
@@ -634,3 +634,22 @@ user_checking_name('sarpslogistics')
 def get_arg(arg_name, arg_number):
     print(f'The argument name is {arg_name}, and the number is {arg_number} ')
 get_arg(arg_number = 10, arg_name ='value')
+
+# Return Statements
+counting_number = 0
+def return_user():
+    if counting_number > 0:
+        for i in range(100,150):
+            counting_number += i
+    return counting_number
+        
+return_user()
+
+a = 2
+b = 3
+
+print(f'a:{a}& b:{b}')
+
+b,a = a,b
+
+print(f'a:{a} & b:{b}')
