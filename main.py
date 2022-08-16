@@ -2133,9 +2133,17 @@ class Person:
         self.name = name
 
     def talk(self):
-        print("What do you want to talk about?")
+        print(f"What do you want to talk about,{self.name} ?")
 
 
 person = Person("Eoin Carrick")
-person.name = "Python Beginner"
+person.name = "Jeff"
 print(person.name)
+person.talk()
+
+# Inheritance
+class Dog:
+    def walk(self):
+        print('Walking')
+
+
