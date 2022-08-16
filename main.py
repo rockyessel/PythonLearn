@@ -1,5 +1,3 @@
-
-
 from datetime import date
 import math
 from random import randint
@@ -82,7 +80,8 @@ msg = f'{first} [{last}] is a coder'
 print(msg)
 print(f'our findings: {othersFinds}')
 
-# /// Strings Method. /// print(len(paragraph))  # the len() is used to check the total number of elements or items a string
+# /// Strings Method. /// print(len(paragraph))  # the len() is used to check the total number of elements or items a
+# string
 # has, or array. 
 # print(paragraph.upper())  # return a new string in upper case. 
 # print(course.lower())  # return a new string in lower case.
@@ -318,7 +317,7 @@ for x in range(4):
     for y in range(3):
         print(f'({x}, {y})')
 
-f_number = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+f_number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 x = 'x'
 for f in f_number:
     for ff in x:
@@ -371,9 +370,10 @@ for row in matrix:
         print(items)
 
 # List Method or Function
-number_list = [2, 4, 2,1,46,2,12,3,76,56,19,7,8,0,32,43,54,65,76,87,98,99,199,12,13,115, 76, 43, 4, 20]
+number_list = [2, 4, 2, 1, 46, 2, 12, 3, 76, 56, 19, 7, 8, 0, 32, 43, 54, 65, 76, 87, 98, 99, 199, 12, 13, 115, 76, 43,
+               4, 20]
 print(number_list.append(1212121212121212))
-# The append() method or function add an element at the end of a list
+# To append() method or function add an element at the end of a list
 
 
 number_list.insert(1, 200)
@@ -444,7 +444,6 @@ for x in num_list:
         the_max_num = x
 print(the_max_num)
 
-
 # Tuple
 tuple_list = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19)
 print(tuple_list[3])
@@ -457,15 +456,15 @@ print(tuple_list[3])
 
 
 # Unpacking
-co_ordinate = (1,2,3)
-x,y,z = co_ordinate
+co_ordinate = (1, 2, 3)
+x, y, z = co_ordinate
 print(f'{x} {z} {y}')
 
 # Dictionaries
 customers = {
-        'name': 'Essel Rocky',
-        'age': 123
-    }
+    'name': 'Essel Rocky',
+    'age': 123
+}
 
 # Methods Of Accessing Information or Value From A Dictionary
 
@@ -479,8 +478,8 @@ print(customers.get('age'))
 # it doesn't return a error even if the value is not in existent, but rather a None.
 
 # Re-assigning values
-reCustomers = customers['age'] = 1 # re-assigning values from the initial to final value
-customers['created_at'] = date.today() # Adding another pair value here
+reCustomers = customers['age'] = 1  # re-assigning values from the initial to final value
+customers['created_at'] = date.today()  # Adding another pair value here
 print(reCustomers)
 print(customers)
 
@@ -525,7 +524,8 @@ print(customers)
 # print(word)
 # # The split method, when used like this " .split(' ') ", it return every single element as array that has space.
 # # eg.  split_letter = 'a b c d e f g h i j k l m n o  p q r s t u v w x y z'
-# #  split_letter.split(' ') returns ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+# #  split_letter.split(' ')
+# returns ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 
 # split_letter = 'a b c d e f g h i j k l m n o p q r s t u v w x y z'
 # l = split_letter.split(' ')
@@ -548,12 +548,14 @@ for every_pair_num in input_arr:
     for word in one_to_hundred_arr:
         num = one_to_hundred_arr.index(word)
         if int(every_pair_num) == int(num):
-           number_result = one_to_hundred_arr[num]
-           print(number_result)
-# So when we take the input from the user, we want to split the " , " coma, the since split, returns a new array. eg, the user inputs "12,434,423,21,999,1993,329,2999,3000", we get ['12','434','423','21','999','1993','329','2999','3000']. Then we call "for loop" and for every number inside the array, and every word in the "one_to_hundred_arr".
+            number_result = one_to_hundred_arr[num]
+            print(number_result)
 
 
-
+# So when we take the input from the user, we want to split the " , " coma,
+# the since split, returns a new array. eg, the user inputs "12,434,423,21,999,1993,329,2999,3000",
+# we get ['12','434','423','21','999','1993','329','2999','3000']. Then we call "for loop" and for every number
+# inside the array, and every word in the "one_to_hundred_arr".
 
 
 # Function in Python
@@ -565,14 +567,18 @@ for every_pair_num in input_arr:
 # where "func" is the "name" of the function, which can be anything at all.
 
 def greet_user():
-  print('Hi there')
-  print('Hello')
+    print('Hi there')
+    print('Hello')
+
 
 greet_user()
+
 
 # Function - Parameters
 def get_users(name):
     print(f'Hello there, have you seen {name}')
+
+
 get_users('Eoin')
 get_users('Carrick')
 
@@ -593,8 +599,9 @@ get_users('Carrick')
 # Keyword Arguments
 # Note Positional Argument, means that orders matters, but in Keyword Arguments, the order is very much less important, since we assign the parameter to the arguments when we call the out the function.
 
-day_mode_in_number = 4 # from 0:00 to 23:00
+day_mode_in_number = 4  # from 0:00 to 23:00
 set_time = 4
+
 
 def greet_the_user(state, time):
     if state >= 0 <= 12:
@@ -603,27 +610,31 @@ def greet_the_user(state, time):
         print('Good Afternoon')
     else:
         print('Good Evening')
-    
+
     if time == state:
         print('Time to wake up, and play the alarm')
     else:
         print("Don't play the alarm")
 
+
 #          Keyword Arguments          Keyword Arguments
 #               ▼                           ▼
-greet_the_user(time = day_mode_in_number, state = set_time)
+greet_the_user(time=day_mode_in_number, state=set_time)
 # greet_the_user(day_mode_in_number, state = set_time) # This is also possible.
 
 # it checks for an input that has a letter vowel inside of it.
-user_name =  input('Type your name here ')
-vowel = ['a', 'e', 'i', 'o', 'u','y']
+user_name = input('Type your name here ')
+vowel = ['a', 'e', 'i', 'o', 'u', 'y']
+
+
 def user_checking_name(user_name):
-     for every_letter in user_name:
+    for every_letter in user_name:
         for every_vowel_letter in vowel:
-          if every_letter == every_vowel_letter:
-            print(f'There is an {every_vowel_letter} in your name ,{user_name}')
+            if every_letter == every_vowel_letter:
+                print(f'There is an {every_vowel_letter} in your name ,{user_name}')
         #   else:
         #     print(f'There is no vowel letter in your name: {user_name}')
+
 
 user_checking_name(user_name)
 user_checking_name('john')
@@ -633,523 +644,549 @@ user_checking_name('sarpslogistics')
 
 def get_arg(arg_name, arg_number):
     print(f'The argument name is {arg_name}, and the number is {arg_number} ')
-get_arg(arg_number = 10, arg_name ='value')
+
+
+get_arg(arg_number=10, arg_name='value')
+
 
 # Return Statements
 def root_number():
     return '{number} / 0.5'
-    
+
 
 a = 2
 b = 3
 
 print(f'a:{a}& b:{b}')
 
-b,a = a,b
+b, a = a, b
 
 print(f'a:{a} & b:{b}')
 
 root_number()
-
+input_text = input("here> ")
+each_word = input_text.split(" ")
 emojis = {
-        "Grinning Face" : "😀",
-        "Grinning Face with Big Eyes" : "😃",
-        "Grinning Face with Smiling Eyes" : "😄",
-        "Beaming Face with Smiling Eyes" : "😁",
-        "Grinning Squinting Face" : "😆",
-        "Grinning Face with Sweat" : "😅",
-        "Rolling on the Floor Laughing" : "🤣",
-        "Face with Tears of Joy" : "😂",
-        "Slightly Smiling Face" : "🙂",
-        "Upside-Down Face" : "🙃",
-        "Melting Face" : "🫠",
-        "Winking Face" : "😉",
-        "Smiling Face with Smiling Eyes" : "😊",
-        "Smiling Face with Halo" : "😇",
-        "Smiling Face with Hearts" : "🥰",
-        "Smiling Face with Heart-Eyes" : "😍",
-        "Star-Struck" : "🤩",
-        "Face Blowing a Kiss" : "😘",
-        "Kissing Face" : "😗",
-        "Smiling Face" : "☺️",
-        "Kissing Face with Closed Eyes" : "😚",
-        "Kissing Face with Smiling Eyes" : "😙",
-        "Smiling Face with Tear" : "🥲",
-        "Face Savoring Food" : "😋",
-        "Face with Tongue" : "😛",
-        "Winking Face with Tongue" : "😜",
-        "Zany Face" : "🤪",
-        "Squinting Face with Tongue" : "😝",
-        "Money-Mouth Face" : "🤑",
-        "Smiling Face with Open Hands" : "🤗",
-        "Face with Hand Over Mouth" : "🤭",
-        "Face with Open Eyes and Hand Over Mouth" : "🫢",
-        "Face with Peeking Eye" : "🫣",
-        "Shushing Face" : "🤫",
-        "Thinking Face" : "🤔",
-        "Saluting Face" : "🫡",
-        "Zipper-Mouth Face" : "🤐",
-        "Face with Raised Eyebrow" : "🤨",
-        "Neutral Face" : "😐",
-        "Expressionless Face" : "😑",
-        "Face Without Mouth" : "😶",
-        "Dotted Line Face" : "🫥",
-        "Face in Clouds" : "😶‍🌫️",
-        "Smirking Face" : "😏",
-        "Unamused Face" : "😒",
-        "Face with Rolling Eyes" : "🙄",
-        "Grimacing Face" : "😬",
-        "Face Exhaling" : "😮‍💨",
-        "Lying Face" : "🤥",
-        "Relieved Face" : "😌",
-        "Pensive Face" : "😔",
-        "Sleepy Face" : "😪",
-        "Drooling Face" : "🤤",
-        "Sleeping Face" : "😴",
-        "Face with Medical Mask" : "😷",
-        "Face with Thermometer" : "🤒",
-        "Face with Head-Bandage" : "🤕",
-        "Nauseated Face" : "🤢",
-        "Face Vomiting" : "🤮",
-        "Sneezing Face" : "🤧",
-        "Hot Face" : "🥵",
-        "Cold Face" : "🥶",
-        "Woozy Face" : "🥴",
-        "Face with Crossed-Out Eyes" : "😵",
-        "Face with Spiral Eyes" : "😵‍💫",
-        "Exploding Head" : "🤯",
-        "Cowboy Hat Face" : "🤠",
-        "Partying Face" : "🥳",
-        "Disguised Face" : "🥸",
-        "Smiling Face with Sunglasses" : "😎",
-        "Nerd Face" : "🤓",
-        "Face with Monocle" : "🧐",
-        "Confused Face" : "😕",
-        "Face with Diagonal Mouth" : "🫤",
-        "Worried Face" : "😟",
-        "Slightly Frowning Face" : "🙁",
-        "Frowning Face" : "☹️",
-        "Face with Open Mouth" : "😮",
-        "Hushed Face" : "😯",
-        "Astonished Face" : "😲",
-        "Flushed Face" : "😳",
-        "Pleading Face" : "🥺",
-        "Face Holding Back Tears" : "🥹",
-        "Frowning Face with Open Mouth" : "😦",
-        "Anguished Face" : "😧",
-        "Fearful Face" : "😨",
-        "Anxious Face with Sweat" : "😰",
-        "Sad but Relieved Face" : "😥",
-        "Crying Face" : "😢",
-        "Loudly Crying Face" : "😭",
-        "Face Screaming in Fear" : "😱",
-        "Confounded Face" : "😖",
-        "Persevering Face" : "😣",
-        "Disappointed Face" : "😞",
-        "Downcast Face with Sweat" : "😓",
-        "Weary Face" : "😩",
-        "Tired Face" : "😫",
-        "Yawning Face" : "🥱",
-        "Face with Steam From Nose" : "😤",
-        "Enraged Face" : "😡",
-        "Angry Face" : "😠",
-        "Face with Symbols on Mouth" : "🤬",
-        "Smiling Face with Horns" : "😈",
-        "Angry Face with Horns" : "👿",
-        "Skull" : "💀",
-        "Skull and Crossbones" : "☠️",
-        "Pile of Poo" : "💩",
-        "Clown Face" : "🤡",
-        "Ogre" : "👹",
-        "Goblin" : "👺",
-        "Ghost" : "👻",
-        "Alien" : "👽",
-        "Alien Monster" : "👾",
-        "Robot" : "🤖",
-        "Grinning Cat" : "😺",
-        "Grinning Cat with Smiling Eyes" : "😸",
-        "Cat with Tears of Joy" : "😹",
-        "Smiling Cat with Heart-Eyes" : "😻",
-        "Cat with Wry Smile" : "😼",
-        "Kissing Cat" : "😽",
-        "Weary Cat" : "🙀",
-        "Crying Cat" : "😿",
-        "Pouting Cat" : "😾",
-        "Kiss Mark" : "💋",
-        "Waving Hand" : "👋",
-        "Raised Back of Hand" : "🤚",
-        "Hand with Fingers Splayed" : "🖐️",
-        "Raised Hand" : "✋",
-        "Vulcan Salute" : "🖖",
-        "Rightwards Hand" : "🫱",
-        "Leftwards Hand" : "🫲",
-        "Palm Down Hand" : "🫳",
-        "Palm Up Hand" : "🫴",
-        "OK Hand" : "👌",
-        "Pinched Fingers" : "🤌",
-        "Pinching Hand" : "🤏",
-        "Victory Hand" : "✌️",
-        "Crossed Fingers" : "🤞",
-        "Hand with Index Finger and Thumb Crossed" : "🫰",
-        "Love-You Gesture" : "🤟",
-        "Sign of the Horns" : "🤘",
-        "Call Me Hand" : "🤙",
-        "Backhand Index Pointing Left" : "👈",
-        "Backhand Index Pointing Right" : "👉",
-        "Backhand Index Pointing Up" : "👆",
-        "Middle Finger" : "🖕",
-        "Backhand Index Pointing Down" : "👇",
-        "Index Pointing Up" : "☝️",
-        "Index Pointing at the Viewer" : "🫵",
-        "Thumbs Up" : "👍",
-        "Thumbs Down" : "👎",
-        "Raised Fist" : "✊",
-        "Oncoming Fist" : "👊",
-        "Left-Facing Fist" : "🤛",
-        "Right-Facing Fist" : "🤜",
-        "Clapping Hands" : "👏",
-        "Raising Hands" : "🙌",
-        "Heart Hands" : "🫶",
-        "Open Hands" : "👐",
-        "Palms Up Together" : "🤲",
-        "Handshake" : "🤝",
-        "Folded Hands" : "🙏",
-        "Writing Hand" : "✍️",
-        "Nail Polish" : "💅",
-        "Selfie" : "🤳",
-        "Flexed Biceps" : "💪",
-        "Mechanical Arm" : "🦾",
-        "Mechanical Leg" : "🦿",
-        "Leg" : "🦵",
-        "Foot" : "🦶",
-        "Ear" : "👂",
-        "Ear with Hearing Aid" : "🦻",
-        "Nose" : "👃",
-        "Brain" : "🧠",
-        "Anatomical Heart" : "🫀",
-        "Lungs" : "🫁",
-        "Tooth" : "🦷",
-        "Bone" : "🦴",
-        "Eyes" : "👀",
-        "Eye" : "👁️",
-        "Tongue" : "👅",
-        "Mouth" : "👄",
-        "Biting Lip" : "🫦",
-        "Baby" : "👶",
-        "Child" : "🧒",
-        "Boy" : "👦",
-        "Girl" : "👧",
-        "Person" : "🧑",
-        "Person: Blond Hair" : "👱",
-        "Man" : "👨",
-        "Person: Beard" : "🧔",
-        "Man: Red Hair" : "👨‍🦰",
-        "Man: Curly Hair" : "👨‍🦱",
-        "Man: White Hair" : "👨‍🦳",
-        "Man: Bald" : "👨‍🦲",
-        "Woman" : "👩",
-        "Woman: Red Hair" : "👩‍🦰",
-        "Person: Red Hair" : "🧑‍🦰",
-        "Woman: Curly Hair" : "👩‍🦱",
-        "Person: Curly Hair" : "🧑‍🦱",
-        "Woman: White Hair" : "👩‍🦳",
-        "Person: White Hair" : "🧑‍🦳",
-        "Woman: Bald" : "👩‍🦲",
-        "Person: Bald" : "🧑‍🦲",
-        "Woman: Blond Hair" : "👱‍♀️",
-        "Man: Blond Hair" : "👱‍♂️",
-        "Older Person" : "🧓",
-        "Old Man" : "👴",
-        "Old Woman" : "👵",
-        "Person Frowning" : "🙍",
-        "Man Frowning" : "🙍‍♂️",
-        "Woman Frowning" : "🙍‍♀️",
-        "Person Pouting" : "🙎",
-        "Man Pouting" : "🙎‍♂️",
-        "Woman Pouting" : "🙎‍♀️",
-        "Person Gesturing No" : "🙅",
-        "Man Gesturing No" : "🙅‍♂️",
-        "Woman Gesturing No" : "🙅‍♀️",
-        "Person Gesturing OK" : "🙆",
-        "Man Gesturing OK" : "🙆‍♂️",
-        "Woman Gesturing OK" : "🙆‍♀️",
-        "Person Tipping Hand" : "💁",
-        "Man Tipping Hand" : "💁‍♂️",
-        "Woman Tipping Hand" : "💁‍♀️",
-        "Person Raising Hand" : "🙋",
-        "Man Raising Hand" : "🙋‍♂️",
-        "Woman Raising Hand" : "🙋‍♀️",
-        "Deaf Person" : "🧏",
-        "Deaf Man" : "🧏‍♂️",
-        "Deaf Woman" : "🧏‍♀️",
-        "Person Bowing" : "🙇",
-        "Man Bowing" : "🙇‍♂️",
-        "Woman Bowing" : "🙇‍♀️",
-        "Person Facepalming" : "🤦",
-        "Man Facepalming" : "🤦‍♂️",
-        "Woman Facepalming" : "🤦‍♀️",
-        "Person Shrugging" : "🤷",
-        "Man Shrugging" : "🤷‍♂️",
-        "Woman Shrugging" : "🤷‍♀️",
-        "Health Worker" : "🧑‍⚕️",
-        "Man Health Worker" : "👨‍⚕️",
-        "Woman Health Worker" : "👩‍⚕️",
-        "Student" : "🧑‍🎓",
-        "Man Student" : "👨‍🎓",
-        "Woman Student" : "👩‍🎓",
-        "Teacher" : "🧑‍🏫",
-        "Man Teacher" : "👨‍🏫",
-        "Woman Teacher" : "👩‍🏫",
-        "Judge" : "🧑‍⚖️",
-        "Man Judge" : "👨‍⚖️",
-        "Woman Judge" : "👩‍⚖️",
-        "Farmer" : "🧑‍🌾",
-        "Man Farmer" : "👨‍🌾",
-        "Woman Farmer" : "👩‍🌾",
-        "Cook" : "🧑‍🍳",
-        "Man Cook" : "👨‍🍳",
-        "Woman Cook" : "👩‍🍳",
-        "Mechanic" : "🧑‍🔧",
-        "Man Mechanic" : "👨‍🔧",
-        "Woman Mechanic" : "👩‍🔧",
-        "Factory Worker" : "🧑‍🏭",
-        "Man Factory Worker" : "👨‍🏭",
-        "Woman Factory Worker" : "👩‍🏭",
-        "Office Worker" : "🧑‍💼",
-        "Man Office Worker" : "👨‍💼",
-        "Woman Office Worker" : "👩‍💼",
-        "Scientist" : "🧑‍🔬",
-        "Man Scientist" : "👨‍🔬",
-        "Woman Scientist" : "👩‍🔬",
-        "Technologist" : "🧑‍💻",
-        "Man Technologist" : "👨‍💻",
-        "Woman Technologist" : "👩‍💻",
-        "Singer" : "🧑‍🎤",
-        "Man Singer" : "👨‍🎤",
-        "Woman Singer" : "👩‍🎤",
-        "Artist" : "🧑‍🎨",
-        "Man Artist" : "👨‍🎨",
-        "Woman Artist" : "👩‍🎨",
-        "Pilot" : "🧑‍✈️",
-        "Man Pilot" : "👨‍✈️",
-        "Woman Pilot" : "👩‍✈️",
-        "Astronaut" : "🧑‍🚀",
-        "Man Astronaut" : "👨‍🚀",
-        "Woman Astronaut" : "👩‍🚀",
-        "Firefighter" : "🧑‍🚒",
-        "Man Firefighter" : "👨‍🚒",
-        "Woman Firefighter" : "👩‍🚒",
-        "Police Officer" : "👮",
-        "Man Police Officer" : "👮‍♂️",
-        "Woman Police Officer" : "👮‍♀️",
-        "Detective" : "🕵️",
-        "Man Detective" : "🕵️‍♂️",
-        "Woman Detective" : "🕵️‍♀️",
-        "Guard" : "💂",
-        "Man Guard" : "💂‍♂️",
-        "Woman Guard" : "💂‍♀️",
-        "Ninja" : "🥷",
-        "Construction Worker" : "👷",
-        "Man Construction Worker" : "👷‍♂️",
-        "Woman Construction Worker" : "👷‍♀️",
-        "Person with Crown" : "🫅",
-        "Prince" : "🤴",
-        "Princess" : "👸",
-        "Person Wearing Turban" : "👳",
-        "Man Wearing Turban" : "👳‍♂️",
-        "Woman Wearing Turban" : "👳‍♀️",
-        "Person with Skullcap" : "👲",
-        "Woman with Headscarf" : "🧕",
-        "Person in Tuxedo" : "🤵",
-        "Man in Tuxedo" : "🤵‍♂️",
-        "Woman in Tuxedo" : "🤵‍♀️",
-        "Person with Veil" : "👰",
-        "Man with Veil" : "👰‍♂️",
-        "Woman with Veil" : "👰‍♀️",
-        "Pregnant Woman" : "🤰",
-        "Pregnant Man" : "🫃",
-        "Pregnant Person" : "🫄",
-        "Breast-Feeding" : "🤱",
-        "Woman Feeding Baby" : "👩‍🍼",
-        "Man Feeding Baby" : "👨‍🍼",
-        "Person Feeding Baby" : "🧑‍🍼",
-        "Baby Angel" : "👼",
-        "Santa Claus" : "🎅",
-        "Mrs. Claus" : "🤶",
-        "Mx Claus" : "🧑‍🎄",
-        "Superhero" : "🦸",
-        "Man Superhero" : "🦸‍♂️",
-        "Woman Superhero" : "🦸‍♀️",
-        "Supervillain" : "🦹",
-        "Man Supervillain" : "🦹‍♂️",
-        "Woman Supervillain" : "🦹‍♀️",
-        "Mage" : "🧙",
-        "Man Mage" : "🧙‍♂️",
-        "Woman Mage" : "🧙‍♀️",
-        "Fairy" : "🧚",
-        "Man Fairy" : "🧚‍♂️",
-        "Woman Fairy" : "🧚‍♀️",
-        "Vampire" : "🧛",
-        "Man Vampire" : "🧛‍♂️",
-        "Woman Vampire" : "🧛‍♀️",
-        "Merperson" : "🧜",
-        "Merman" : "🧜‍♂️",
-        "Mermaid" : "🧜‍♀️",
-        "Elf" : "🧝",
-        "Man Elf" : "🧝‍♂️",
-        "Woman Elf" : "🧝‍♀️",
-        "Genie" : "🧞",
-        "Man Genie" : "🧞‍♂️",
-        "Woman Genie" : "🧞‍♀️",
-        "Zombie" : "🧟",
-        "Man Zombie" : "🧟‍♂️",
-        "Woman Zombie" : "🧟‍♀️",
-        "Troll" : "🧌",
-        "Person Getting Massage" : "💆",
-        "Man Getting Massage" : "💆‍♂️",
-        "Woman Getting Massage" : "💆‍♀️",
-        "Person Getting Haircut" : "💇",
-        "Man Getting Haircut" : "💇‍♂️",
-        "Woman Getting Haircut" : "💇‍♀️",
-        "Person Walking" : "🚶",
-        "Man Walking" : "🚶‍♂️",
-        "Woman Walking" : "🚶‍♀️",
-        "Person Standing" : "🧍",
-        "Man Standing" : "🧍‍♂️",
-        "Woman Standing" : "🧍‍♀️",
-        "Person Kneeling" : "🧎",
-        "Man Kneeling" : "🧎‍♂️",
-        "Woman Kneeling" : "🧎‍♀️",
-        "Person with White Cane" : "🧑‍🦯",
-        "Man with White Cane" : "👨‍🦯",
-        "Woman with White Cane" : "👩‍🦯",
-        "Person in Motorized Wheelchair" : "🧑‍🦼",
-        "Man in Motorized Wheelchair" : "👨‍🦼",
-        "Woman in Motorized Wheelchair" : "👩‍🦼",
-        "Person in Manual Wheelchair" : "🧑‍🦽",
-        "Man in Manual Wheelchair" : "👨‍🦽",
-        "Woman in Manual Wheelchair" : "👩‍🦽",
-        "Person Running" : "🏃",
-        "Man Running" : "🏃‍♂️",
-        "Woman Running" : "🏃‍♀️",
-        "Woman Dancing" : "💃",
-        "Man Dancing" : "🕺",
-        "Person in Suit Levitating" : "🕴️",
-        "People with Bunny Ears" : "👯",
-        "Men with Bunny Ears" : "👯‍♂️",
-        "Women with Bunny Ears" : "👯‍♀️",
-        "Person in Steamy Room" : "🧖",
-        "Man in Steamy Room" : "🧖‍♂️",
-        "Woman in Steamy Room" : "🧖‍♀️",
-        "Person in Lotus Position" : "🧘",
-        "People Holding Hands" : "🧑‍🤝‍🧑",
-        "Women Holding Hands" : "👭",
-        "Woman and Man Holding Hands" : "👫",
-        "Men Holding Hands" : "👬",
-        "Kiss" : "💏",
-        "Kiss: Woman, Man" : "👩‍❤️‍💋‍👨",
-        "Kiss: Man, Man" : "👨‍❤️‍💋‍👨",
-        "Kiss: Woman, Woman" : "👩‍❤️‍💋‍👩",
-        "Couple with Heart" : "💑",
-        "Couple with Heart: Woman, Man" : "👩‍❤️‍👨",
-        "Couple with Heart: Man, Man" : "👨‍❤️‍👨",
-        "Couple with Heart: Woman, Woman" : "👩‍❤️‍👩",
-        "Family" : "👪",
-        "Family: Man, Woman, Boy" : "👨‍👩‍👦",
-        "Family: Man, Woman, Girl" : "👨‍👩‍👧",
-        "Family: Man, Woman, Girl, Boy" : "👨‍👩‍👧‍👦",
-        "Family: Man, Woman, Boy, Boy" : "👨‍👩‍👦‍👦",
-        "Family: Man, Woman, Girl, Girl" : "👨‍👩‍👧‍👧",
-        "Family: Man, Man, Boy" : "👨‍👨‍👦",
-        "Family: Man, Man, Girl" : "👨‍👨‍👧",
-        "Family: Man, Man, Girl, Boy" : "👨‍👨‍👧‍👦",
-        "Family: Man, Man, Boy, Boy" : "👨‍👨‍👦‍👦",
-        "Family: Man, Man, Girl, Girl" : "👨‍👨‍👧‍👧",
-        "Family: Woman, Woman, Boy" : "👩‍👩‍👦",
-        "Family: Woman, Woman, Girl" : "👩‍👩‍👧",
-        "Family: Woman, Woman, Girl, Boy" : "👩‍👩‍👧‍👦",
-        "Family: Woman, Woman, Boy, Boy" : "👩‍👩‍👦‍👦",
-        "Family: Woman, Woman, Girl, Girl" : "👩‍👩‍👧‍👧",
-        "Family: Man, Boy" : "👨‍👦",
-        "Family: Man, Boy, Boy" : "👨‍👦‍👦",
-        "Family: Man, Girl" : "👨‍👧",
-        "Family: Man, Girl, Boy" : "👨‍👧‍👦",
-        "Family: Man, Girl, Girl" : "👨‍👧‍👧",
-        "Family: Woman, Boy" : "👩‍👦",
-        "Family: Woman, Boy, Boy" : "👩‍👦‍👦",
-        "Family: Woman, Girl" : "👩‍👧",
-        "Family: Woman, Girl, Boy" : "👩‍👧‍👦",
-        "Family: Woman, Girl, Girl" : "👩‍👧‍👧",
-        "Speaking Head" : "🗣️",
-        "Bust in Silhouette" : "👤",
-        "Busts in Silhouette" : "👥",
-        "People Hugging" : "🫂",
-        "Footprints" : "👣",
-        "Luggage" : "🧳",
-        "Closed Umbrella" : "🌂",
-        "Umbrella" : "☂️",
-        "Jack-O-Lantern" : "🎃",
-        "Thread" : "🧵",
-        "Yarn" : "🧶",
-        "Glasses" : "👓",
-        "Sunglasses" : "🕶️",
-        "Goggles" : "🥽",
-        "Lab Coat" : "🥼",
-        "Safety Vest" : "🦺",
-        "Necktie" : "👔",
-        "T-Shirt" : "👕",
-        "Jeans" : "👖",
-        "Scarf" : "🧣",
-        "Gloves" : "🧤",
-        "Coat" : "🧥",
-        "Socks" : "🧦",
-        "Dress" : "👗",
-        "Kimono" : "👘",
-        "Sari" : "🥻",
-        "One-Piece Swimsuit" : "🩱",
-        "Briefs" : "🩲",
-        "Shorts" : "🩳",
-        "Bikini" : "👙",
-        "Woman’s Clothes" : "👚",
-        "Purse" : "👛",
-        "Handbag" : "👜",
-        "Clutch Bag" : "👝",
-        "Backpack" : "🎒",
-        "Thong Sandal" : "🩴",
-        "Man’s Shoe" : "👞",
-        "Running Shoe" : "👟",
-        "Hiking Boot" : "🥾",
-        "Flat Shoe" : "🥿",
-        "High-Heeled Shoe" : "👠",
-        "Woman’s Sandal" : "👡",
-        "Ballet Shoes" : "🩰",
-        "Woman’s Boot" : "👢",
-        "Crown" : "👑",
-        "Woman’s Hat" : "👒",
-        "Top Hat" : "🎩",
-        "Graduation Cap" : "🎓",
-        "Billed Cap" : "🧢",
-        "Military Helmet" : "🪖",
-        "Rescue Worker’s Helmet" : "⛑️",
-        "Lipstick" : "💄",
-        "Ring" : "💍",
-        "Briefcase" : "💼",
-        "Drop of Blood" : "🩸"
-    }
+    "Grinning-Face": "😀",
+    "Grinning Face with Big Eyes": "😃",
+    "Grinning Face with Smiling Eyes": "😄",
+    "Beaming Face with Smiling Eyes": "😁",
+    "Grinning Squinting Face": "😆",
+    "Grinning Face with Sweat": "😅",
+    "Rolling on the Floor Laughing": "🤣",
+    "Face with Tears of Joy": "😂",
+    "Slightly Smiling Face": "🙂",
+    "Upside-Down Face": "🙃",
+    "Melting Face": "🫠",
+    "Winking Face": "😉",
+    "Smiling Face with Smiling Eyes": "😊",
+    "Smiling Face with Halo": "😇",
+    "Smiling Face with Hearts": "🥰",
+    "Smiling Face with Heart-Eyes": "😍",
+    "Star-Struck": "🤩",
+    "Face Blowing a Kiss": "😘",
+    "Kissing Face": "😗",
+    "Smiling Face": "☺️",
+    "Kissing Face with Closed Eyes": "😚",
+    "Kissing Face with Smiling Eyes": "😙",
+    "Smiling Face with Tear": "🥲",
+    "Face Savoring Food": "😋",
+    "Face with Tongue": "😛",
+    "Winking Face with Tongue": "😜",
+    "Zany Face": "🤪",
+    "Squinting Face with Tongue": "😝",
+    "Money-Mouth Face": "🤑",
+    "Smiling Face with Open Hands": "🤗",
+    "Face with Hand Over Mouth": "🤭",
+    "Face with Open Eyes and Hand Over Mouth": "🫢",
+    "Face with Peeking Eye": "🫣",
+    "Shushing Face": "🤫",
+    "Thinking Face": "🤔",
+    "Saluting Face": "🫡",
+    "Zipper-Mouth Face": "🤐",
+    "Face with Raised Eyebrow": "🤨",
+    "Neutral Face": "😐",
+    "Expressionless Face": "😑",
+    "Face Without Mouth": "😶",
+    "Dotted Line Face": "🫥",
+    "Face in Clouds": "😶‍🌫️",
+    "Smirking Face": "😏",
+    "Unamused Face": "😒",
+    "Face with Rolling Eyes": "🙄",
+    "Grimacing Face": "😬",
+    "Face Exhaling": "😮‍💨",
+    "Lying Face": "🤥",
+    "Relieved Face": "😌",
+    "Pensive Face": "😔",
+    "Sleepy Face": "😪",
+    "Drooling Face": "🤤",
+    "Sleeping Face": "😴",
+    "Face with Medical Mask": "😷",
+    "Face with Thermometer": "🤒",
+    "Face with Head-Bandage": "🤕",
+    "Nauseated Face": "🤢",
+    "Face Vomiting": "🤮",
+    "Sneezing Face": "🤧",
+    "Hot Face": "🥵",
+    "Cold Face": "🥶",
+    "Woozy Face": "🥴",
+    "Face with Crossed-Out Eyes": "😵",
+    "Face with Spiral Eyes": "😵‍💫",
+    "Exploding Head": "🤯",
+    "Cowboy Hat Face": "🤠",
+    "Partying Face": "🥳",
+    "Disguised Face": "🥸",
+    "Smiling Face with Sunglasses": "😎",
+    "Nerd Face": "🤓",
+    "Face with Monocle": "🧐",
+    "Confused Face": "😕",
+    "Face with Diagonal Mouth": "🫤",
+    "Worried Face": "😟",
+    "Slightly Frowning Face": "🙁",
+    "Frowning Face": "☹️",
+    "Face with Open Mouth": "😮",
+    "Hushed Face": "😯",
+    "Astonished Face": "😲",
+    "Flushed Face": "😳",
+    "Pleading Face": "🥺",
+    "Face Holding Back Tears": "🥹",
+    "Frowning Face with Open Mouth": "😦",
+    "Anguished Face": "😧",
+    "Fearful Face": "😨",
+    "Anxious Face with Sweat": "😰",
+    "Sad but Relieved Face": "😥",
+    "Crying Face": "😢",
+    "Loudly Crying Face": "😭",
+    "Face Screaming in Fear": "😱",
+    "Confounded Face": "😖",
+    "Persevering Face": "😣",
+    "Disappointed Face": "😞",
+    "Downcast Face with Sweat": "😓",
+    "Weary Face": "😩",
+    "Tired Face": "😫",
+    "Yawning Face": "🥱",
+    "Face with Steam From Nose": "😤",
+    "Enraged Face": "😡",
+    "Angry Face": "😠",
+    "Face with Symbols on Mouth": "🤬",
+    "Smiling Face with Horns": "😈",
+    "Angry Face with Horns": "👿",
+    "Skull": "💀",
+    "Skull and Crossbones": "☠️",
+    "Pile of Poo": "💩",
+    "Clown Face": "🤡",
+    "Ogre": "👹",
+    "Goblin": "👺",
+    "Ghost": "👻",
+    "Alien": "👽",
+    "Alien Monster": "👾",
+    "Robot": "🤖",
+    "Grinning Cat": "😺",
+    "Grinning Cat with Smiling Eyes": "😸",
+    "Cat with Tears of Joy": "😹",
+    "Smiling Cat with Heart-Eyes": "😻",
+    "Cat with Wry Smile": "😼",
+    "Kissing Cat": "😽",
+    "Weary Cat": "🙀",
+    "Crying Cat": "😿",
+    "Pouting Cat": "😾",
+    "Kiss Mark": "💋",
+    "Waving Hand": "👋",
+    "Raised Back of Hand": "🤚",
+    "Hand with Fingers Splayed": "🖐️",
+    "Raised Hand": "✋",
+    "Vulcan Salute": "🖖",
+    "Rightwards Hand": "🫱",
+    "Leftwards Hand": "🫲",
+    "Palm Down Hand": "🫳",
+    "Palm Up Hand": "🫴",
+    "OK Hand": "👌",
+    "Pinched Fingers": "🤌",
+    "Pinching Hand": "🤏",
+    "Victory Hand": "✌️",
+    "Crossed Fingers": "🤞",
+    "Hand with Index Finger and Thumb Crossed": "🫰",
+    "Love-You Gesture": "🤟",
+    "Sign of the Horns": "🤘",
+    "Call Me Hand": "🤙",
+    "Backhand Index Pointing Left": "👈",
+    "Backhand Index Pointing Right": "👉",
+    "Backhand Index Pointing Up": "👆",
+    "Middle Finger": "🖕",
+    "Backhand Index Pointing Down": "👇",
+    "Index Pointing Up": "☝️",
+    "Index Pointing at the Viewer": "🫵",
+    "Thumbs Up": "👍",
+    "Thumbs Down": "👎",
+    "Raised Fist": "✊",
+    "Oncoming Fist": "👊",
+    "Left-Facing Fist": "🤛",
+    "Right-Facing Fist": "🤜",
+    "Clapping Hands": "👏",
+    "Raising Hands": "🙌",
+    "Heart Hands": "🫶",
+    "Open Hands": "👐",
+    "Palms Up Together": "🤲",
+    "Handshake": "🤝",
+    "Folded Hands": "🙏",
+    "Writing Hand": "✍️",
+    "Nail Polish": "💅",
+    "Selfie": "🤳",
+    "Flexed Biceps": "💪",
+    "Mechanical Arm": "🦾",
+    "Mechanical Leg": "🦿",
+    "Leg": "🦵",
+    "Foot": "🦶",
+    "Ear": "👂",
+    "Ear with Hearing Aid": "🦻",
+    "Nose": "👃",
+    "Brain": "🧠",
+    "Anatomical Heart": "🫀",
+    "Lungs": "🫁",
+    "Tooth": "🦷",
+    "Bone": "🦴",
+    "Eyes": "👀",
+    "Eye": "👁️",
+    "Tongue": "👅",
+    "Mouth": "👄",
+    "Biting Lip": "🫦",
+    "Baby": "👶",
+    "Child": "🧒",
+    "Boy": "👦",
+    "Girl": "👧",
+    "Person": "🧑",
+    "Person: Blond Hair": "👱",
+    "Man": "👨",
+    "Person: Beard": "🧔",
+    "Man: Red Hair": "👨‍🦰",
+    "Man: Curly Hair": "👨‍🦱",
+    "Man: White Hair": "👨‍🦳",
+    "Man: Bald": "👨‍🦲",
+    "Woman": "👩",
+    "Woman: Red Hair": "👩‍🦰",
+    "Person: Red Hair": "🧑‍🦰",
+    "Woman: Curly Hair": "👩‍🦱",
+    "Person: Curly Hair": "🧑‍🦱",
+    "Woman: White Hair": "👩‍🦳",
+    "Person: White Hair": "🧑‍🦳",
+    "Woman: Bald": "👩‍🦲",
+    "Person: Bald": "🧑‍🦲",
+    "Woman: Blond Hair": "👱‍♀️",
+    "Man: Blond Hair": "👱‍♂️",
+    "Older Person": "🧓",
+    "Old Man": "👴",
+    "Old Woman": "👵",
+    "Person Frowning": "🙍",
+    "Man Frowning": "🙍‍♂️",
+    "Woman Frowning": "🙍‍♀️",
+    "Person Pouting": "🙎",
+    "Man Pouting": "🙎‍♂️",
+    "Woman Pouting": "🙎‍♀️",
+    "Person Gesturing No": "🙅",
+    "Man Gesturing No": "🙅‍♂️",
+    "Woman Gesturing No": "🙅‍♀️",
+    "Person Gesturing OK": "🙆",
+    "Man Gesturing OK": "🙆‍♂️",
+    "Woman Gesturing OK": "🙆‍♀️",
+    "Person Tipping Hand": "💁",
+    "Man Tipping Hand": "💁‍♂️",
+    "Woman Tipping Hand": "💁‍♀️",
+    "Person Raising Hand": "🙋",
+    "Man Raising Hand": "🙋‍♂️",
+    "Woman Raising Hand": "🙋‍♀️",
+    "Deaf Person": "🧏",
+    "Deaf Man": "🧏‍♂️",
+    "Deaf Woman": "🧏‍♀️",
+    "Person Bowing": "🙇",
+    "Man Bowing": "🙇‍♂️",
+    "Woman Bowing": "🙇‍♀️",
+    "Person Facepalming": "🤦",
+    "Man Facepalming": "🤦‍♂️",
+    "Woman Facepalming": "🤦‍♀️",
+    "Person Shrugging": "🤷",
+    "Man Shrugging": "🤷‍♂️",
+    "Woman Shrugging": "🤷‍♀️",
+    "Health Worker": "🧑‍⚕️",
+    "Man Health Worker": "👨‍⚕️",
+    "Woman Health Worker": "👩‍⚕️",
+    "Student": "🧑‍🎓",
+    "Man Student": "👨‍🎓",
+    "Woman Student": "👩‍🎓",
+    "Teacher": "🧑‍🏫",
+    "Man Teacher": "👨‍🏫",
+    "Woman Teacher": "👩‍🏫",
+    "Judge": "🧑‍⚖️",
+    "Man Judge": "👨‍⚖️",
+    "Woman Judge": "👩‍⚖️",
+    "Farmer": "🧑‍🌾",
+    "Man Farmer": "👨‍🌾",
+    "Woman Farmer": "👩‍🌾",
+    "Cook": "🧑‍🍳",
+    "Man Cook": "👨‍🍳",
+    "Woman Cook": "👩‍🍳",
+    "Mechanic": "🧑‍🔧",
+    "Man Mechanic": "👨‍🔧",
+    "Woman Mechanic": "👩‍🔧",
+    "Factory Worker": "🧑‍🏭",
+    "Man Factory Worker": "👨‍🏭",
+    "Woman Factory Worker": "👩‍🏭",
+    "Office Worker": "🧑‍💼",
+    "Man Office Worker": "👨‍💼",
+    "Woman Office Worker": "👩‍💼",
+    "Scientist": "🧑‍🔬",
+    "Man Scientist": "👨‍🔬",
+    "Woman Scientist": "👩‍🔬",
+    "Technologist": "🧑‍💻",
+    "Man Technologist": "👨‍💻",
+    "Woman Technologist": "👩‍💻",
+    "Singer": "🧑‍🎤",
+    "Man Singer": "👨‍🎤",
+    "Woman Singer": "👩‍🎤",
+    "Artist": "🧑‍🎨",
+    "Man Artist": "👨‍🎨",
+    "Woman Artist": "👩‍🎨",
+    "Pilot": "🧑‍✈️",
+    "Man Pilot": "👨‍✈️",
+    "Woman Pilot": "👩‍✈️",
+    "Astronaut": "🧑‍🚀",
+    "Man Astronaut": "👨‍🚀",
+    "Woman Astronaut": "👩‍🚀",
+    "Firefighter": "🧑‍🚒",
+    "Man Firefighter": "👨‍🚒",
+    "Woman Firefighter": "👩‍🚒",
+    "Police Officer": "👮",
+    "Man Police Officer": "👮‍♂️",
+    "Woman Police Officer": "👮‍♀️",
+    "Detective": "🕵️",
+    "Man Detective": "🕵️‍♂️",
+    "Woman Detective": "🕵️‍♀️",
+    "Guard": "💂",
+    "Man Guard": "💂‍♂️",
+    "Woman Guard": "💂‍♀️",
+    "Ninja": "🥷",
+    "Construction Worker": "👷",
+    "Man Construction Worker": "👷‍♂️",
+    "Woman Construction Worker": "👷‍♀️",
+    "Person with Crown": "🫅",
+    "Prince": "🤴",
+    "Princess": "👸",
+    "Person Wearing Turban": "👳",
+    "Man Wearing Turban": "👳‍♂️",
+    "Woman Wearing Turban": "👳‍♀️",
+    "Person with Skullcap": "👲",
+    "Woman with Headscarf": "🧕",
+    "Person in Tuxedo": "🤵",
+    "Man in Tuxedo": "🤵‍♂️",
+    "Woman in Tuxedo": "🤵‍♀️",
+    "Person with Veil": "👰",
+    "Man with Veil": "👰‍♂️",
+    "Woman with Veil": "👰‍♀️",
+    "Pregnant Woman": "🤰",
+    "Pregnant Man": "🫃",
+    "Pregnant Person": "🫄",
+    "Breast-Feeding": "🤱",
+    "Woman Feeding Baby": "👩‍🍼",
+    "Man Feeding Baby": "👨‍🍼",
+    "Person Feeding Baby": "🧑‍🍼",
+    "Baby Angel": "👼",
+    "Santa Claus": "🎅",
+    "Mrs. Claus": "🤶",
+    "Mx Claus": "🧑‍🎄",
+    "Superhero": "🦸",
+    "Man Superhero": "🦸‍♂️",
+    "Woman Superhero": "🦸‍♀️",
+    "Supervillain": "🦹",
+    "Man Supervillain": "🦹‍♂️",
+    "Woman Supervillain": "🦹‍♀️",
+    "Mage": "🧙",
+    "Man Mage": "🧙‍♂️",
+    "Woman Mage": "🧙‍♀️",
+    "Fairy": "🧚",
+    "Man Fairy": "🧚‍♂️",
+    "Woman Fairy": "🧚‍♀️",
+    "Vampire": "🧛",
+    "Man Vampire": "🧛‍♂️",
+    "Woman Vampire": "🧛‍♀️",
+    "Merperson": "🧜",
+    "Merman": "🧜‍♂️",
+    "Mermaid": "🧜‍♀️",
+    "Elf": "🧝",
+    "Man Elf": "🧝‍♂️",
+    "Woman Elf": "🧝‍♀️",
+    "Genie": "🧞",
+    "Man Genie": "🧞‍♂️",
+    "Woman Genie": "🧞‍♀️",
+    "Zombie": "🧟",
+    "Man Zombie": "🧟‍♂️",
+    "Woman Zombie": "🧟‍♀️",
+    "Troll": "🧌",
+    "Person Getting Massage": "💆",
+    "Man Getting Massage": "💆‍♂️",
+    "Woman Getting Massage": "💆‍♀️",
+    "Person Getting Haircut": "💇",
+    "Man Getting Haircut": "💇‍♂️",
+    "Woman Getting Haircut": "💇‍♀️",
+    "Person Walking": "🚶",
+    "Man Walking": "🚶‍♂️",
+    "Woman Walking": "🚶‍♀️",
+    "Person Standing": "🧍",
+    "Man Standing": "🧍‍♂️",
+    "Woman Standing": "🧍‍♀️",
+    "Person Kneeling": "🧎",
+    "Man Kneeling": "🧎‍♂️",
+    "Woman Kneeling": "🧎‍♀️",
+    "Person with White Cane": "🧑‍🦯",
+    "Man with White Cane": "👨‍🦯",
+    "Woman with White Cane": "👩‍🦯",
+    "Person in Motorized Wheelchair": "🧑‍🦼",
+    "Man in Motorized Wheelchair": "👨‍🦼",
+    "Woman in Motorized Wheelchair": "👩‍🦼",
+    "Person in Manual Wheelchair": "🧑‍🦽",
+    "Man in Manual Wheelchair": "👨‍🦽",
+    "Woman in Manual Wheelchair": "👩‍🦽",
+    "Person Running": "🏃",
+    "Man Running": "🏃‍♂️",
+    "Woman Running": "🏃‍♀️",
+    "Woman Dancing": "💃",
+    "Man Dancing": "🕺",
+    "Person in Suit Levitating": "🕴️",
+    "People with Bunny Ears": "👯",
+    "Men with Bunny Ears": "👯‍♂️",
+    "Women with Bunny Ears": "👯‍♀️",
+    "Person in Steamy Room": "🧖",
+    "Man in Steamy Room": "🧖‍♂️",
+    "Woman in Steamy Room": "🧖‍♀️",
+    "Person in Lotus Position": "🧘",
+    "People Holding Hands": "🧑‍🤝‍🧑",
+    "Women Holding Hands": "👭",
+    "Woman and Man Holding Hands": "👫",
+    "Men Holding Hands": "👬",
+    "Kiss": "💏",
+    "Kiss: Woman, Man": "👩‍❤️‍💋‍👨",
+    "Kiss: Man, Man": "👨‍❤️‍💋‍👨",
+    "Kiss: Woman, Woman": "👩‍❤️‍💋‍👩",
+    "Couple with Heart": "💑",
+    "Couple with Heart: Woman, Man": "👩‍❤️‍👨",
+    "Couple with Heart: Man, Man": "👨‍❤️‍👨",
+    "Couple with Heart: Woman, Woman": "👩‍❤️‍👩",
+    "Family": "👪",
+    "Family: Man, Woman, Boy": "👨‍👩‍👦",
+    "Family: Man, Woman, Girl": "👨‍👩‍👧",
+    "Family: Man, Woman, Girl, Boy": "👨‍👩‍👧‍👦",
+    "Family: Man, Woman, Boy, Boy": "👨‍👩‍👦‍👦",
+    "Family: Man, Woman, Girl, Girl": "👨‍👩‍👧‍👧",
+    "Family: Man, Man, Boy": "👨‍👨‍👦",
+    "Family: Man, Man, Girl": "👨‍👨‍👧",
+    "Family: Man, Man, Girl, Boy": "👨‍👨‍👧‍👦",
+    "Family: Man, Man, Boy, Boy": "👨‍👨‍👦‍👦",
+    "Family: Man, Man, Girl, Girl": "👨‍👨‍👧‍👧",
+    "Family: Woman, Woman, Boy": "👩‍👩‍👦",
+    "Family: Woman, Woman, Girl": "👩‍👩‍👧",
+    "Family: Woman, Woman, Girl, Boy": "👩‍👩‍👧‍👦",
+    "Family: Woman, Woman, Boy, Boy": "👩‍👩‍👦‍👦",
+    "Family: Woman, Woman, Girl, Girl": "👩‍👩‍👧‍👧",
+    "Family: Man, Boy": "👨‍👦",
+    "Family: Man, Boy, Boy": "👨‍👦‍👦",
+    "Family: Man, Girl": "👨‍👧",
+    "Family: Man, Girl, Boy": "👨‍👧‍👦",
+    "Family: Man, Girl, Girl": "👨‍👧‍👧",
+    "Family: Woman, Boy": "👩‍👦",
+    "Family: Woman, Boy, Boy": "👩‍👦‍👦",
+    "Family: Woman, Girl": "👩‍👧",
+    "Family: Woman, Girl, Boy": "👩‍👧‍👦",
+    "Family: Woman, Girl, Girl": "👩‍👧‍👧",
+    "Speaking Head": "🗣️",
+    "Bust in Silhouette": "👤",
+    "Busts in Silhouette": "👥",
+    "People Hugging": "🫂",
+    "Footprints": "👣",
+    "Luggage": "🧳",
+    "Closed Umbrella": "🌂",
+    "Umbrella": "☂️",
+    "Jack-O-Lantern": "🎃",
+    "Thread": "🧵",
+    "Yarn": "🧶",
+    "Glasses": "👓",
+    "Sunglasses": "🕶️",
+    "Goggles": "🥽",
+    "Lab Coat": "🥼",
+    "Safety Vest": "🦺",
+    "Necktie": "👔",
+    "T-Shirt": "👕",
+    "Jeans": "👖",
+    "Scarf": "🧣",
+    "Gloves": "🧤",
+    "Coat": "🧥",
+    "Socks": "🧦",
+    "Dress": "👗",
+    "Kimono": "👘",
+    "Sari": "🥻",
+    "One-Piece Swimsuit": "🩱",
+    "Briefs": "🩲",
+    "Shorts": "🩳",
+    "Bikini": "👙",
+    "Woman’s Clothes": "👚",
+    "Purse": "👛",
+    "Handbag": "👜",
+    "Clutch Bag": "👝",
+    "Backpack": "🎒",
+    "Thong Sandal": "🩴",
+    "Man’s Shoe": "👞",
+    "Running Shoe": "👟",
+    "Hiking Boot": "🥾",
+    "Flat Shoe": "🥿",
+    "High-Heeled Shoe": "👠",
+    "Woman’s Sandal": "👡",
+    "Ballet Shoes": "🩰",
+    "Woman’s Boot": "👢",
+    "Crown": "👑",
+    "Woman’s Hat": "👒",
+    "Top Hat": "🎩",
+    "Graduation Cap": "🎓",
+    "Billed Cap": "🧢",
+    "Military Helmet": "🪖",
+    "Rescue Worker’s Helmet": "⛑️",
+    "Lipstick": "💄",
+    "Ring": "💍",
+    "Briefcase": "💼",
+    "blood": "🩸"
+}
+emo_output = ""
+for each_text in each_word:
+    emo_output += emojis.get(each_text, each_text) + " "
+print(emo_output)
 
-user_emoji_search = input('Search by emotion, eg "sad face": ')
+# user_emoji_search = input('Search by emotion, eg "sad face": ')
 
-def get_emoji_icons(name):
-    words = name.split(' ')
-   
-    output = 'df'
-    for every_word in emojis:
-        know = every_word.split(' ')
-        for word in words:
-            is_true = word == know
-            if is_true:
-                output += word
-            print(output)
-        
+message = input("> ")
+words = message.split(" ")
+print(words)
+emoticons = {
+    ":)": "😊",
+    ":(": "😢"
+}
+output = ""
+for word in words:
+    output += emoticons.get(word, word) + " "
+print(output)
 
-get_emoji_icons(user_emoji_search)
+create_a_list = {
+    "cat": "The cat",
+    "dog": "is it the dog?"
+}
+
+print(create_a_list.get("cat", "Not found"))
+print(create_a_list.get("sheep", "not found"))
+
+user_input = input("Type here > ")
+
+
+def emoticons_convert(emoji_data, emoji_name):
+    output_text = ""
+    arr_word = emoji_name.split(" ")
+    for every_input in arr_word:
+        output_text += emoji_data.get(every_input, every_input)
+    return output_text
+
+
+emoticons_convert(emoticons, user_input)
