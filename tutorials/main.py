@@ -2,11 +2,10 @@
 # Package from Line 2196
 # Importing a package
 # First Method
-import ecommerce.shipping
 from converter import lbs_to_kg
 from utils import find_max
 
-ecommerce.shipping.calc_shipping()
+tutorials.ecommerce.shipping.calc_shipping()
 
 # Second Method
 from ecommerce.shipping import calc_shipping
@@ -1375,3 +1374,5 @@ path = Path()
 print(path.glob('*.py'))  # To search all the files with the extension "py"
 for file in path.glob('*.py'):
     print(file)
+
+# Pypi and Pip
