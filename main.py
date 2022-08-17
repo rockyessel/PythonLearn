@@ -1350,7 +1350,6 @@ for i in range(3):
 
 class Dice():
 
-
     def roll(self):
         x = random.randint(1, 6)
         y = random.randint(1, 6)
@@ -1363,3 +1362,16 @@ class Dice():
 dice = Dice()
 tuple_ = dice.roll()
 print(tuple_)
+
+# Files And Dictionaries
+from pathlib import Path
+
+path = Path()
+# print(path.mkdir())  # To remove a directory
+# print(path.exists())  # To check if a file already exist
+# print(path.rmdir())  # To create a directory
+# print(path.glob('*'))  # the " * " means everything, all files and directory
+# print(path.glob('*.*'))  # To search for only files, and no directory
+print(path.glob('*.py'))  # To search all the files with the extension "py"
+for file in path.glob('*.py'):
+    print(file)
