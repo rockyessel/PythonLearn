@@ -1,3 +1,8 @@
+# Module
+from converter import lbs_to_kg
+from utils import find_max
+
+
 # from datetime import date
 # import math
 # from random import randint
@@ -2141,9 +2146,32 @@ person.name = "Jeff"
 print(person.name)
 person.talk()
 
+
 # Inheritance
-class Dog:
-    def walk(self):
-        print('Walking')
+class Dig:
+    def digging_deep(self):
+        print('Finished digging')
 
 
+class Fighting:
+    def done_fight(self):
+        print('the cat won')
+
+
+class Cat(Dig, Fighting):
+    pass
+
+
+dig_1 = Cat()
+dig_1.done_fight()
+
+# Modules
+# import converter // This method of import, imports everything in the converter,
+# So to import a specific function, do we:
+# from converter import lbs_to_kg
+# So modules is used to separate our code, instead of writing everything into, one file.
+
+print(lbs_to_kg(890))
+find_max([21, 12, 323, 543, 45, 34, 2, 4, 6, 7, 8, 54, 0, 999])
+c = find_max([21, 12, 323, 543, 45, 34, 2, 4, 6, 7, 8, 54, 0, 999])
+print(f'c: {c}')
